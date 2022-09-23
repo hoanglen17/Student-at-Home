@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelear.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 STUDENT LIST />
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+
+    </tr>
+    <tr th:each="student: ${students}">
+        <td th:text="${student.id}">Id</td>
+        <td th:text="${student.name}">Name</td>
+        <td th:text="${student.Email}">Name</td>
+    </tr>
+</table>
+
+</body>
+</html>
